@@ -1,0 +1,208 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+	background-color: #efefef;
+}
+
+body{
+	font:14px/1.5 Arial, Helvetica, sans-serif;
+	margin:0;
+}
+
+
+header{
+    box-sizing: border-box;
+	text-align: center;
+    width: 100%;
+    padding: 25px 40px;
+    background-color: #673AB7;
+    overflow: hidden;
+}
+
+
+header h1{
+    float: left;
+	font: normal 24px/1.5 'Open Sans', sans-serif;
+	color: #fff;
+}
+
+header a{
+    color:#fff;
+    float: right;
+    text-decoration: none;
+    display: inline-block;
+    padding: 13px 50px;
+    border-radius: 3px;
+    font: bold 14px/1 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    background-color:#F05283;
+
+}
+
+ul {
+    background-color: #FFF;
+    padding: 20px;
+    margin-top: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: #FFF;
+    text-align: left;
+    background-color: #ccc;
+    padding: 4px 5px;
+    border-radius: 2px;
+    opacity: 0.8;
+    margin: 4px;
+    font-size: small;
+    display: inline-block;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.link.active{
+    background-color: #F05283;
+    pointer-events: none;
+}
+
+.link:hover {
+    opacity: 1;
+}
+
+p {
+    font-weight: lighter;
+    color: #444;
+    text-align: center;
+}
+
+.main-content{
+    margin: 75px 0;
+}
+
+.iabs-list {
+    padding: 5px 5px 5px 22px;
+}
+
+.iabs-list li {
+    line-height: 1.5;
+    font-weight: lighter;
+}
+
+.error {
+    color: red;
+}
+
+.error p {
+    text-align: center !important;
+}
+
+.logo {
+    margin: 6px 0 14px;
+    text-align: center;
+}
+
+.logo a {
+    background-image: none,url(../../images/iabs-logo.png?v=13334);
+    -webkit-background-size: 84px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: #444;
+    height: 33px;
+    font-size: 20px;
+    line-height: 1.3em;
+    margin: 0px auto -30px;
+    padding: 0;
+    text-decoration: none;
+    width: 87px;
+    text-indent: -9999px;
+    outline: 0;
+    overflow: hidden;
+    display: block;
+}
+
+.feedback {
+    padding: 20px 0 0 0;
+    font-size: small;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.feedback a {
+    padding: 4px 5px;
+    font-size: small;
+}
+
+.hint {
+    float: right;
+    width: 25%;
+    text-align: left;
+    margin: -2px auto 0;
+    font-size: small;
+}
+
+@media (max-width: 600px) {
+    .hint {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin: 5px 0 0 0;  
+    }
+}
+
+.slick-button {
+    box-shadow: 0 1px 0 #ccc;
+    text-decoration: none;
+    margin: 7px 15px;
+    display: inline-block;
+    width: unset !important;
+    padding: 5px !important;
+    font-size: small;
+    cursor: pointer;
+    transition: .5s ease-in-out all;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    white-space: nowrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    line-height: 1;
+}
+
+.slick-button:hover {
+    background: #fafafa;
+    border-color: #999;
+    color: #23282d;
+}
+
+.fix {
+}
+
+.noti {
+    width: 100% !important;
+    padding: 10px !important;
+    margin: 10px 0;
+    display: block;
+}
+
+.danger, .success {
+    color: #fff;
+    text-align: center !important;
+}
+
+.danger {
+    background-color: red !important;
+}
+
+.success {
+    background-color: green !important;
+}

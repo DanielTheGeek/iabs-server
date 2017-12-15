@@ -1,0 +1,24 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteCond $1 !^(index\.php|resources|robots\.txt)
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ index.php/$1 [L,QSA] 
+	
+	## Begin - Rewrite rules to block out some common exploits.
+	# If you experience problems on your site block out the operations listed below
+	# This attempts to block the most common type of exploit `attempts` to cometchat!
+
+	# Block out any script that includes a javascript: in URL.
+	RewriteCond %{QUERY_STRING} (javascript:).*(\;) [NC,OR]
+	# Block out any script that includes a <script> tag in URL.
+	RewriteCond %{QUERY_STRING} (<|%3C)([^s]*s)+cript.*(>|%3E) [NC]
+	# Return 403 Forbidden header
+	RewriteRule .* - [F]
+	#
+	## End - Rewrite rules to block out some common exploits.
+</IfModule>
+
+<IfModule mod_headers.c>
+	Header set X-Robots-Tag: "noindex. nofollow"
+</IfModule>

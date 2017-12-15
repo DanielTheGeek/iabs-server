@@ -1,0 +1,3 @@
+ErrorDocument 403 /rangostudios/errors/error404.php
+
+deny from all
