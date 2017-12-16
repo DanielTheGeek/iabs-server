@@ -1,4 +1,4 @@
-https://travis-ci.org/DanielTheGeek/iabs-server.svg?branch=master
+[![Build Status](https://travis-ci.org/DanielTheGeek/iabs-server.svg?branch=master)](https://travis-ci.org/DanielTheGeek/iabs-server)
 # IABS Server
 Hostable version of the IABS headless CMS.
 [IABS Website](http://iabs.scriptorigin.com).
