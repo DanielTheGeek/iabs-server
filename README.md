@@ -1,3 +1,4 @@
+https://travis-ci.org/DanielTheGeek/iabs-server.svg?branch=master
 # IABS Server
 Hostable version of the IABS headless CMS.
 [IABS Website](http://iabs.scriptorigin.com).
